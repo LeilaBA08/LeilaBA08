@@ -1,16 +1,15 @@
-## Hi there 👋
+# Hi, I'm Leila
+I'm building my portfolio to show the projects I created during my DA bootcamp. 
 
-<!--
-**LeilaBA08/LeilaBA08** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## What I have learnt:
+-Excel and Data basics (one sentence description for each)
+-Python / Google Colab
+-SQL / MySQL Workbench
+-Tableau / Power BI dashboards
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Projects I have completed
+- [Excel] – short one‑line description
+- [Tableau]
+- [Power BI]
+- [SQL]
+- [Python]
