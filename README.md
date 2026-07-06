@@ -8,7 +8,7 @@ I'm building my portfolio to show the projects I created during my DA bootcamp.
 -Tableau / Power BI dashboards
 
 ## Projects I have completed
-- [Excel] – short one‑line description
+- [Excel](projects/excel.md) – short one‑line description
 - [Tableau]
 - [Power BI]
 - [SQL]
