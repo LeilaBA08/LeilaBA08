@@ -20,11 +20,11 @@ Acting as a data analyst for a global health organisation, I used the Gapminder 
 **What I built:** <br>
 **Life Expectancy by Continent**<br>
 A bar chart showing average life expectancy, sorted 
-descending, coloured by continent
+descending, coloured by continent <br>
 **Life Expectancy Trend Over Time**<br>
-A line chart tracking the top 5 countries by average life expectancy from 1983–2008, coloured by country
+A line chart tracking the top 5 countries by average life expectancy from 1983–2008, coloured by country <br>
 **Population Distribution by Gender**<br>
-A pie chart showing Canada's population split by gender for 2008, with population labels
+A pie chart showing Canada's population split by gender for 2008, with population labels <br>
 **Life Expectancy vs BMI** <br>
 A scatter plot exploring the relationship between average life expectancy and average BMI, with points coloured by continent
 
