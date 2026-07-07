@@ -105,16 +105,33 @@ cleaner way to handle multiple thresholds in one formula.
 
 ## 3. Bike Sales Visualisations
 
-Brief intro: what this task built on from the previous one, and what the visualisation goal was.
+Built three chart types in Excel a line, a stacked column, and pie, to visualise bike sales revenue and profit trends over time, by country, and by age group.
 
-**What I did:**
-- Screenshot – [caption/explanation]
+### Revenue vs. Profit by year
 
-**Chart types / features used:**
-- ...
+![Revenue vs profits line chart](../images/revenue_vs_profits.png)
 
-**What I learned / result:**
-- ...
+*Line chart comparing Annual Profit and Annual Revenue from 2017–2021.*
+
+For this task I built a line chart to track how revenue and profit changed year on year. Revenue and profit both trend upward overall, but the gap between them widens over time, revenue grows faster than profit, particularly from 2019 onwards.
+
+### Product revenue by country
+
+![Product revenue by country stacked column chart](../images/product_rev_by_country.png)
+
+*Stacked column chart showing revenue by product category (Accessories, Bikes, Clothing) across six countries.*
+
+I used a stacked column chart to compare revenue by product category across countries in one view. Bikes are clearly the dominant product across every country, and the United States generates by far the most total revenue, more than double the next-highest country (Australia).
+
+### Revenue by age group
+
+![Revenue comparison by age group pie chart](../images/rev_by_age_group.png)
+
+*Pie chart showing revenue share by age group, with category names and percentages displayed.*
+
+I used a pie chart to show revenue split by age group as a proportion of the whole. Adults (35–64) account for half of all revenue, followed by Young Adults (25–34) at 36%, while Seniors make up a negligible share, useful for seeing at a glance which age group to prioritise for marketing.
+
+
 
 ---
 
