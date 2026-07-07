@@ -4,7 +4,7 @@ A collection of Tableau dashboards completed during my Data Analyst bootcamp.
 
 ## Contents
 - [1. Global Health Insights Dashboard](#1-global-health-insights-dashboard)
-
+-[2. Spotify Insights Dashboard](#2-spotify-insights-dashboard)
 ---
 
 ## 1. Global Health Insights Dashboard
@@ -39,3 +39,9 @@ A scatter plot exploring the relationship between average life expectancy and av
 
 ### Reflection:
 Health organisations like the NHS could use this kind of data to benchmark UK health outcomes against global trends and spot areas needing improvement. Understanding how population size, BMI, and life expectancy vary across regions can help guide public health planning and support long-term decisions around preventative care and resource allocation.
+
+---
+
+## 2. Spotify Insights Dashboard
+
+
