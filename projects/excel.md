@@ -31,6 +31,26 @@ I then added two calculated columns:
 
 **Total Sales**:<br>`=G2*H2`, I used this formula to multiply the quantity by unit price to calculate the total value of each sale. This turns two raw figures into one meaningful number, which will later feed into calculations such as the commission totals.  
 
+![Customer Category formula](../images/retail_sales_customerformula.png)
+
+*Customer Category column added*
+
+**Customer Category**:<br> `=IFS(E2>=50,"Senior",E2>=30,"Adult",E2<30,"Young Adult")`, This formula checks each customer's age and labels them Senior, Adult, or Young Adult. IFS checks each condition in order and stops at the first true match, making it a cleaner alternative to nesting several IF statements. Adding this column makes it easier to group and compare sales patterns across age groups. 
+
+### Commission calculations
+
+![Commission table filtered by age](../images/retailsalesWcommission.png)
+*Filtered to customers aged 64, with Commission Amount added, plus a summary box for 
+Commission Rate, Total, and Average.*
+
+Filtered by Age to isolate a specific group, then added:
+
+**Commission Amount**:<br>`=I3*$P$8`, Total Sales x a fixed 1.5% rate. The `$` locks 
+the reference so it stays fixed when copied down each row, rather than shifting to a different cell each time.
+
+**Commission Total**:<br>`=SUM(range)` shows the total commission earned across all filtered sales, providing an at-a-glance figure for total earnings.
+
+**Average Commission**:<br> `=AVERAGE(range)` shows the typical commission per sale, which is more useful than the total when the number of sales varies. 
 
 ## 2. Bike Sales & SWITCH Dataset
 
