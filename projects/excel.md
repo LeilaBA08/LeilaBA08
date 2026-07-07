@@ -19,7 +19,15 @@ For this task, I was given a retail sales dataset. I turned the raw data into a 
 
 ![Retail sales table](../images/retail_sales_table.png)
 
-*Raw data converted into an Excel Table using Ctrl+T*
+*Raw data converted into an Excel Table using Ctrl+T. Columns: Transaction ID, Date, Customer ID, 
+Gender, Age, Product Category, Quantity, Price per Unit*
+
+Converting the data into an Excel Table makes it easier to sort, filter and reference formulas; it also expands automatically if more rows are added later.  
+I then added two calculated columns:
+
+![Total Sales formula](../images/retail_sales_totalsales_formula.png)
+*Total Sales column added*
+**Total Sales**-`=G2*H2`, I used this formula to multiply the quantity by unit price to calculate the total value of each sale. This turns two raw figures into one meaningful number, which will later feed into calculations such as the commission totals.  
 
 
 ## 2. Bike Sales & SWITCH Dataset
