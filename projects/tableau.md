@@ -37,5 +37,5 @@ A scatter plot exploring the relationship between average life expectancy and av
 - Canada's gender split is almost perfectly balanced.<br>
 - The relationship between BMI and life expectancy doesn't show a simple trend, suggesting other health factors are likely influencing the pattern.
 
-###Reflection:
+### Reflection:
 Health organisations like the NHS could use this kind of data to benchmark UK health outcomes against global trends and spot areas needing improvement. Understanding how population size, BMI, and life expectancy vary across regions can help guide public health planning and support long-term decisions around preventative care and resource allocation.
