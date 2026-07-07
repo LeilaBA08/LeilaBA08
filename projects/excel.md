@@ -74,16 +74,23 @@ Showing this as a percentage rather than raw totals makes it easier to compare g
 
 ## 2. Bike Sales & SWITCH Dataset
 
-Brief intro: what the dataset was, and what Task 1 vs Task 2 (SWITCH) each involved.
+For these tasks, I analysed the bike sales data by country, age group and gender using a pivot table, and used the `SWITCH` function to categorise sales volume into text labels. 
 
-**What I did:**
-- Screenshot – [caption/explanation]
+### Bike Sales Pivot Table 
 
-**Formulas/functions used:**
-- `SWITCH()` – why I used it, what it solved
+Before building the pivot table, I cleaned the Country column, as some entries were inconsistently capitalised (e.g. "australia" vs "Australia"). I duplicated the column, used a formula to correct the casing, then pasted the corrected values back over the original.
 
-**What I learned / result:**
-- ...
+![Bike sales pivot table and chart](../images/pivot_sales.png)
+
+*Pivot table and stacked column chart showing Sum of Order Quantity by Country, Age Group, and Customer Gender.*
+
+**Findings**
++The United States is the most profitable market overall. Within it, the Adult age group generates the highest sales, and female customers outperform male customers by 38%.
++Australia and the United Kindgom  are the only countries with sales across all market categories, with Australia having 350% more customers than the UK. 
++Germany's customers are exclusively Adults, with females making up 61% of that group. 
++Canada is the lowest performing market, with customers only in the Young Adult group, suggesting its marketing or product positioning may need further investigation. 
+
+### SWITCH function task
 
 ---
 
@@ -140,9 +147,9 @@ Subjects Passed.*
 
 **Support Required**:<br> `=IF(E2<70,"Yes","No")`, flags students whose average fell 
 below 70. A student sitting exactly at 70 still gets "No", since 70 is the pass 
-threshold rather than a fail point.
+threshold rather than a fail point.<br>
 **Subject in Need of Support**:<br> `=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`, identifies which of the three subjects is each student's weakest by checking which 
-score matches the row's minimum.
+score matches the row's minimum.<br>
 **Number of Subjects Passed**:<br> `=COUNTIF(B2:D2,">=70")`, counts how many subjects 
 each student scored 70 or above in, using 70 as the pass threshold.
 
