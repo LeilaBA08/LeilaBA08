@@ -45,12 +45,14 @@ Commission Rate, Total, and Average.*
 
 Filtered by Age to isolate a specific group, then added:
 
-**Commission Amount**:<br>`=I3*$P$8`, Total Sales x a fixed 1.5% rate. The `$` locks 
+**Commission Amount Column**:<br>`=I3*$P$8`, Total Sales x a fixed 1.5% rate. The `$` locks 
 the reference so it stays fixed when copied down each row, rather than shifting to a different cell each time.
 
 **Commission Total**:<br>`=SUM(range)` shows the total commission earned across all filtered sales, providing an at-a-glance figure for total earnings.
 
 **Average Commission**:<br> `=AVERAGE(range)` shows the typical commission per sale, which is more useful than the total when the number of sales varies. 
+
+The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value. 
 
 ## 2. Bike Sales & SWITCH Dataset
 
