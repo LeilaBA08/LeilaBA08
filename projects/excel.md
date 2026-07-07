@@ -134,11 +134,15 @@ I added an Average column using:<br>
 `=AVERAGE(B2:D2)`
 This calculates each student's average across English, Mathematics and Science.
 <br>
+<br>
+<br>
 ![Highest score formula](../images/student_highestscore.png)
 
 I also added a Highest Score column using:<br>
 `=MAX(B3,C3,D3)`
 This identifies each student's strongest subject at a glance.
+<br>
+<br>
 <br>
 ![Sorted table with conditional formatting](../images/conditional_formatting.png)
 
