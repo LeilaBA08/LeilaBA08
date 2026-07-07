@@ -27,6 +27,7 @@ I converted the raw data into an Excel Table using Ctrl+T. The columns included 
 
 **Total Sales**:<br>`=G2*H2`, This formula multiplies quantity by unit price to calculate the total value of each sale. 
 <br>
+
 ![Customer Category formula](../images/retail_sales_customerformula.png)
 
 *Customer Category column added*
