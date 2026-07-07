@@ -54,6 +54,24 @@ the reference so it stays fixed when copied down each row, rather than shifting 
 
 The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value. 
 
+### Pivot tables and slicers
+
+![Pivot table with slicers](../images/totalsalesSlicers.png)
+
+*Total Sales by Customer Category and Product Category, with slicers for Gender, 
+Product Category, and Customer Category.*
+
+I built a pivot table to summarise sales by category, with slicers so anyone who views the sheet can filter interactively without needing to know Excel's filter menus. The slicers also make it quick to explore different combinations without rebuilding a table each time.<br>This is useful to see which groups and product categories are driving the most sales, so marketing or stock decisions can be focused on what's performing well. 
+
+![Sales by gender percentage breakdown with chart](../images/_total_sales_by_gender.png)
+
+*Total Sales by Gender and Product Category, shown as a % of Grand Total, with a clustered column chart.*
+
+This second pivot table shows sales as a **percentage of total** rather than raw figures, which makes it easier to compare proportions between groups (For example, Female customers make up 51% of total sales). I paired this with a clustered column chart to make the comparison visually clear at a glance. 
+
+Showing this as a percentage rather than raw totals makes it easier to compare groups fairly, even if one group has more overall sales. It is useful to highlight where spending is concentrated, for example, whether one gender favours a particular product category more than the other. 
+
+
 ## 2. Bike Sales & SWITCH Dataset
 
 Brief intro: what the dataset was, and what Task 1 vs Task 2 (SWITCH) each involved.
