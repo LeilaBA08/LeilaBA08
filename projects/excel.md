@@ -110,19 +110,22 @@ using conditional formatting. As a stretch task, I extended the analysis by iden
 additional meaningful insights that could be drawn from the table.
 
 ![Average formula](../images/average.png)
+
 *Average column filled in using `=AVERAGE(B2:D2)` for each student.*
 
 Calculated each student's average across English, Mathematics, and Science.
 
 ![Highest score formula](../images/student_highestscore.png)
+
 *Highest score column using `=MAX(B3,C3,D3)`.*
 
 Used `MAX` to pull out each student's single highest subject score, useful for quickly 
 identifying a student's strongest subject without scanning all three columns individually.
 
 ![Sorted table with conditional formatting](../images/conditional_formatting.png)
+
 *Table sorted by Highest Score (descending), with a colour scale applied to the Average 
-column — green for higher averages, red for lower.*
+column using green for higher averages, red for lower.*
 
 Sorted the table to surface top performers by highest score, then applied conditional 
 formatting to the Average column so strong and weak performers stand out visually 
@@ -131,6 +134,7 @@ without needing to read every number individually.
 ### Stretch task
 
 ![Stretch task with support columns](../images/stretch_task.png)
+
 *Added three columns: Support Required, Subject in Need of Support, and Number of 
 Subjects Passed.*
 
