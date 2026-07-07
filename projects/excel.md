@@ -63,7 +63,7 @@ Product Category, and Customer Category.*
 
 I built a pivot table to summarise sales by category, with slicers so anyone who views the sheet can filter interactively without needing to know Excel's filter menus. The slicers also make it quick to explore different combinations without rebuilding a table each time.<br>This is useful to see which groups and product categories are driving the most sales, so marketing or stock decisions can be focused on what's performing well. 
 
-![Sales by gender percentage breakdown with chart](..images/perc_totalsales_by_gender.png)
+![Sales by gender percentage breakdown with chart](images/perc_totalsales_by_gender.png)
 
 *Total Sales by Gender and Product Category, shown as a % of Grand Total, with a clustered column chart.*
 
