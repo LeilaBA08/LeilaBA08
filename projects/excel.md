@@ -13,7 +13,7 @@ All datasets used in these projects were provided during the bootcamp and source
 
 ## 1. Retail Sales Analysis
 
-For this task, I was given a retail sales dataset. I turned the raw data into a structured Excel table, then used formulas and pivot tables to calculate commission and summarise sales by customer and product category. 
+For this task, I was given a retail sales dataset. I turned the raw data into a structured Excel table, then used formulas and pivot tables to calculate commission and summarise sales by customer and product category.
 
 ### Building the table
 
@@ -25,8 +25,7 @@ I converted the raw data into an Excel Table using Ctrl+T. The columns included 
 
 *Total Sales column added*
 
-**Total Sales**:<br>`=G2*H2`, This formula multiplies quantity by unit price to calculate the total value of each sale. 
-<br>
+**Total Sales**:<br>`=G2*H2`, This formula multiplies quantity by unit price to calculate the total value of each sale.
 
 ![Customer Category formula](../images/retail_sales_customerformula.png)
 
@@ -46,40 +45,40 @@ I filtered the data to customers aged 64 and added a commission amount column, a
 
 **Average Commission**:<br> `=AVERAGE(range)` This shows the average commission per sale and helps compare performance across different sales volumes.
 
-The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value. 
+The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value.
 
 ### Pivot tables and slicers
 
 ![Pivot table with slicers](../images/totalsalesSlicers.png)
 
-*Total Sales by Customer Category and Product Category, with slicers for Gender, 
-Product Category, and Customer Category.*
+*Total Sales by Customer Category and Product Category, with slicers for Gender, Product Category, and Customer Category.*
 
-I built a pivot table to summarise sales by customer category and product category, with slicers for Gender, Product Category and Customer Category. The slicers make it easy to filter the data interactively without rebuilding the table.<br>This is useful to see which groups and product categories are driving the most sales, so marketing or stock decisions can be focused on what's performing well. 
-<br>
+I built a pivot table to summarise sales by customer category and product category, with slicers for Gender, Product Category and Customer Category. The slicers make it easy to filter the data interactively without rebuilding the table. This is useful to see which groups and product categories are driving the most sales, so marketing or stock decisions can be focused on what's performing well.
+
 ![Sales by gender percentage breakdown with chart](../images/perc_totalsales_by_gender.png)
 
 I also created a second pivot table showing sales by Gender and Product Category as a percentage of the grand total. I paired this with a clustered column chart to make the comparison clearer. Showing the data as percentages makes it easier to compare group behaviour fairly.
 
+---
 
 ## 2. Bike Sales & SWITCH Dataset
 
-For these tasks, I analysed the bike sales data by country, age group and gender using a pivot table, and used the `SWITCH` function to categorise sales volume into text labels. 
+For these tasks, I analysed the bike sales data by country, age group and gender using a pivot table, and used the `SWITCH` function to categorise sales volume into text labels.
 
-### Bike Sales Pivot Table 
+### Bike Sales Pivot Table
 
 Before building the pivot table, I cleaned the Country column, as some entries were inconsistently capitalised (e.g. "australia" vs "Australia"). I duplicated the column, used a formula to correct the casing, then pasted the corrected values back over the original.
 
 ![Bike sales pivot table and chart](../images/pivot_sales.png)
 
-I then created a pivot table and stacked column chart showing the sum of order quantity by Country, Age Group and Customer Gender.
+I created a pivot table and stacked column chart showing the sum of order quantity by Country, Age Group and Customer Gender.
 
-**Findings**<br>
+**Findings**
 - The United States is the most profitable market overall by order quantity.
-- In the United States, the Adult age group generated the highest sales, and female customers outperformed male customers by 38%.<br>
-- Australia and the United Kingdom  are the only countries with sales across all market categories, with Australia having 350% more customers than the UK. <br> 
-- Germany's customers are exclusively Adults, with females making up 61% of that group.<br> 
-- Canada is the lowest performing market, with customers only in the Young Adult group, suggesting its marketing or product positioning may need further investigation. 
+- In the United States, the Adult age group generated the highest sales, and female customers outperformed male customers by 38%.
+- Australia and the United Kingdom are the only countries with sales across all market categories, with Australia having 350% more customers than the UK.
+- Germany's customers are exclusively Adults, with females making up 61% of that group.
+- Canada is the lowest performing market, with customers only in the Young Adult group, suggesting its marketing or product positioning may need further investigation.
 
 ### SWITCH function task
 
@@ -87,13 +86,14 @@ I then created a pivot table and stacked column chart showing the sum of order q
 
 I added a Sales Volume By Text column using:<br>
 `=SWITCH(TRUE, C2>600,"High", C2>=300,"Medium","Low")`
-This group's sales volume into High, Medium or Low bands without needing nested IF statements. Using SWITCH(TRUE, ...) makes the formula cleaner and easier to read.
+
+This groups sales volume into High, Medium or Low bands without needing nested IF statements. Using SWITCH(TRUE, ...) makes the formula cleaner and easier to read.
 
 ---
 
 ## 3. Bike Sales Visualisations
 
-I built three chart types in Excel: a line, a stacked column, and a pie, to visualise bike sales revenue and profit trends over time, by country, and by age group. 
+I built three chart types in Excel: a line, a stacked column, and a pie, to visualise bike sales revenue and profit trends over time, by country, and by age group.
 
 ### Revenue vs. Profit by year
 
@@ -113,31 +113,26 @@ I used a stacked column chart to compare revenue by product category across six 
 
 I used a pie chart to show revenue split by age group. Adults (35–64) accounted for half of total revenue, followed by Young Adults (25–34) at 36%, while Seniors made up a very small share.
 
-
 ---
 
 ## 4. Student Records Table
 
-For this task, I analysed a small classroom dataset. I calculated averages and the 
-highest score, sorted and filtered for top performers, and highlighted the results 
-using conditional formatting. As a stretch task, I identified 
-additional meaningful insights that could be drawn from the table.
+For this task, I analysed a small classroom dataset. I calculated averages and the highest score, sorted and filtered for top performers, and highlighted the results using conditional formatting. As a stretch task, I identified additional meaningful insights that could be drawn from the table.
 
 ![Average formula](../images/average.png)
 
 I added an Average column using:<br>
+`=AVERAGE(B2:D2)`
 
-`=AVERAGE(B2:D2)`<br>
+This calculates each student's average across English, Mathematics and Science.
 
-This calculates each student’s average across English, Mathematics and Science.
-<br>
 ![Highest score formula](../images/student_highestscore.png)
 
 I also added a Highest Score column using:<br>
+`=MAX(B3,C3,D3)`
 
-`=MAX(B3,C3,D3)`<br>
-This identifies each student’s strongest subject at a glance.
-<br>
+This identifies each student's strongest subject at a glance.
+
 ![Sorted table with conditional formatting](../images/conditional_formatting.png)
 
 I sorted the table by Highest Score in descending order and applied conditional formatting to the Average column. This made strong and weak performers easy to identify visually.
@@ -148,15 +143,19 @@ I sorted the table by Highest Score in descending order and applied conditional 
 
 I added three extra columns: Support Required, Subject in Need of Support and Number of Subjects Passed.
 
-**Support Required**<br>
-`=IF(E2<70,"Yes","No")`<br>
+**Support Required**:<br>`=IF(E2<70,"Yes","No")`
+
 This flags students whose average fell below the pass threshold.
-<br>
-**Subject in Need of Support**<br>
-`=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`<br>
-This identifies each student’s weakest subject.
-<br>
-**Number of Subjects Passed**<br>
+
+**Subject in Need of Support**:<br>`=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`
+
+This identifies each student's weakest subject.
+
+**Number of Subjects Passed**:<br>`=COUNTIF(B2:D2,">=70")`
+
+This counts how many subjects each student scored 70 or above in.
+
+These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
 `=COUNTIF(B2:D2,">=70")`<br>
 This counts how many subjects each student scored 70 or above in.
 <br>
