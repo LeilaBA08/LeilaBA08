@@ -5,6 +5,7 @@ A collection of Tableau dashboards completed during my Data Analyst bootcamp.
 ## Contents
 - [1. Global Health Insights Dashboard](#1-global-health-insights-dashboard)
 - [2. Spotify Insights Dashboard](#2-spotify-insights-dashboard)
+
 ---
 
 ## 1. Global Health Insights Dashboard
