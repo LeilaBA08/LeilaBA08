@@ -17,7 +17,8 @@ For this task, I was given a retail sales dataset. I turned the raw data into a 
 
 ### Building the table
 
-![Retail sales table](../images/retail_sales_table.png)
+<img src="../images/retail_sales_table.png" alt="Retail sales table" width="700">
+
 *Raw data converted into an Excel Table using Ctrl+T*
 
 
