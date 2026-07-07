@@ -104,13 +104,44 @@ Brief intro: what this task built on from the previous one, and what the visuali
 
 ## 4. Student Records Table
 
-Brief intro: what the dataset was and what the task involved.
+For this task, I analysed a small classroom dataset. I calculated averages and the 
+highest score, sorted and filtered for top performers, and highlighted the results 
+using conditional formatting. As a stretch task, I extended the analysis by identifying 
+additional meaningful insights that could be drawn from the table.
 
-**What I did:**
-- Screenshot – [caption/explanation]
+![Average formula](../images/average.png)
+*Average column filled in using `=AVERAGE(B2:D2)` for each student.*
 
-**Formulas/functions used:**
-- ...
+Calculated each student's average across English, Mathematics, and Science.
 
-**What I learned / result:**
-- ...
+![Highest score formula](../images/student_highestscore.png)
+*Highest score column using `=MAX(B3,C3,D3)`.*
+
+Used `MAX` to pull out each student's single highest subject score, useful for quickly 
+identifying a student's strongest subject without scanning all three columns individually.
+
+![Sorted table with conditional formatting](../images/conditional_formatting.png)
+*Table sorted by Highest Score (descending), with a colour scale applied to the Average 
+column — green for higher averages, red for lower.*
+
+Sorted the table to surface top performers by highest score, then applied conditional 
+formatting to the Average column so strong and weak performers stand out visually 
+without needing to read every number individually.
+
+### Stretch task
+
+![Stretch task with support columns](../images/stretch_task.png)
+*Added three columns: Support Required, Subject in Need of Support, and Number of 
+Subjects Passed.*
+
+**Support Required**:<br> `=IF(E2<70,"Yes","No")`, flags students whose average fell 
+below 70. A student sitting exactly at 70 still gets "No", since 70 is the pass 
+threshold rather than a fail point.
+**Subject in Need of Support**:<br> `=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`, identifies which of the three subjects is each student's weakest by checking which 
+score matches the row's minimum.
+**Number of Subjects Passed**:<br> `=COUNTIF(B2:D2,">=70")`, counts how many subjects 
+each student scored 70 or above in, using 70 as the pass threshold.
+
+This kind of flagging is useful in a classroom setting because it turns raw scores into 
+something actionable, helping a teacher quickly spot who needs help and in which 
+subject, rather than manually reviewing every row.
