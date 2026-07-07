@@ -26,8 +26,10 @@ Converting the data into an Excel Table makes it easier to sort, filter and refe
 I then added two calculated columns:
 
 ![Total Sales formula](../images/retail_sales_totalsales_formula.png)
+
 *Total Sales column added*
-**Total Sales**-`=G2*H2`, I used this formula to multiply the quantity by unit price to calculate the total value of each sale. This turns two raw figures into one meaningful number, which will later feed into calculations such as the commission totals.  
+
+**Total Sales**:<br>`=G2*H2`, I used this formula to multiply the quantity by unit price to calculate the total value of each sale. This turns two raw figures into one meaningful number, which will later feed into calculations such as the commission totals.  
 
 
 ## 2. Bike Sales & SWITCH Dataset
