@@ -84,13 +84,22 @@ Before building the pivot table, I cleaned the Country column, as some entries w
 
 *Pivot table and stacked column chart showing Sum of Order Quantity by Country, Age Group, and Customer Gender.*
 
-**Findings**
-+The United States is the most profitable market overall. Within it, the Adult age group generates the highest sales, and female customers outperform male customers by 38%.
-+Australia and the United Kindgom  are the only countries with sales across all market categories, with Australia having 350% more customers than the UK. 
-+Germany's customers are exclusively Adults, with females making up 61% of that group. 
-+Canada is the lowest performing market, with customers only in the Young Adult group, suggesting its marketing or product positioning may need further investigation. 
+**Findings**<br>
+- The United States is the most profitable market overall. Within it, the Adult age group generates the highest sales, and female customers outperform male customers by 38%.<br>
+- Australia and the United Kindgom  are the only countries with sales across all market categories, with Australia having 350% more customers than the UK.<br> 
+- Germany's customers are exclusively Adults, with females making up 61% of that group.<br> 
+- Canada is the lowest performing market, with customers only in the Young Adult group, suggesting its marketing or product positioning may need further investigation. 
 
 ### SWITCH function task
+
+![SWITCH formula categorising sales volume](../images/switch_task.png)
+
+*Sales Volume By Text column using `=SWITCH(TRUE, C2>600,"High", C2>=300,"Medium","Low")`.*
+
+Used `SWITCH` combined with `TRUE` to categorise each sale's volume into High, Medium, 
+or Low bands, rather than nesting multiple `IF` statements. `SWITCH(TRUE, ...)` checks 
+each condition in order and returns the label for the first one that matches, it's a 
+cleaner way to handle multiple thresholds in one formula.
 
 ---
 
