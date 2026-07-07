@@ -25,13 +25,17 @@ I converted the raw data into an Excel Table using Ctrl+T. The columns included 
 
 *Total Sales column added*
 
-**Total Sales**:<br>`=G2*H2`, This formula multiplies quantity by unit price to calculate the total value of each sale.
+**Total Sales**:<br>
+`=G2*H2`
+This formula multiplies quantity by unit price to calculate the total value of each sale.
 
 ![Customer Category formula](../images/retail_sales_customerformula.png)
 
 *Customer Category column added*
 
-**Customer Category**:<br> `=IFS(E2>=50,"Senior",E2>=30,"Adult",E2<30,"Young Adult")`, This formula groups customers into age bands, making it easier to compare sales patterns across different age groups.
+**Customer Category**:<br> 
+`=IFS(E2>=50,"Senior",E2>=30,"Adult",E2<30,"Young Adult")`
+This formula groups customers into age bands, making it easier to compare sales patterns across different age groups.
 
 ### Commission calculations
 
@@ -39,11 +43,17 @@ I converted the raw data into an Excel Table using Ctrl+T. The columns included 
 
 I filtered the data to customers aged 64 and added a commission amount column, along with a summary box for commission rate, total commission and average commission.
 
-**Commission Amount Column**:<br>`=I3*$P$8`, This calculates commission by multiplying total sales by a fixed 1.5% rate. The `$` locks the reference so it stays fixed when copied down each row, rather than shifting to a different cell each time.
+**Commission Amount Column**:<br>`
+=I3*$P$8`
+This calculates commission by multiplying total sales by a fixed 1.5% rate. The `$` locks the reference so it stays fixed when copied down each row, rather than shifting to a different cell each time.
 
-**Commission Total**:<br>`=SUM(range)` This shows the total commission earned across the filtered sales.
+**Commission Total**:<br>`
+=SUM(range)` 
+This shows the total commission earned across the filtered sales.
 
-**Average Commission**:<br> `=AVERAGE(range)` This shows the average commission per sale and helps compare performance across different sales volumes.
+**Average Commission**:<br> `
+=AVERAGE(range)` 
+This shows the average commission per sale and helps compare performance across different sales volumes.
 
 The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value.
 
@@ -86,7 +96,6 @@ I created a pivot table and stacked column chart showing the sum of order quanti
 
 I added a Sales Volume By Text column using:<br>
 `=SWITCH(TRUE, C2>600,"High", C2>=300,"Medium","Low")`
-
 This groups sales volume into High, Medium or Low bands without needing nested IF statements. Using SWITCH(TRUE, ...) makes the formula cleaner and easier to read.
 
 ---
@@ -123,16 +132,14 @@ For this task, I analysed a small classroom dataset. I calculated averages and t
 
 I added an Average column using:<br>
 `=AVERAGE(B2:D2)`
-
 This calculates each student's average across English, Mathematics and Science.
-
+<br>
 ![Highest score formula](../images/student_highestscore.png)
 
 I also added a Highest Score column using:<br>
 `=MAX(B3,C3,D3)`
-
 This identifies each student's strongest subject at a glance.
-
+<br>
 ![Sorted table with conditional formatting](../images/conditional_formatting.png)
 
 I sorted the table by Highest Score in descending order and applied conditional formatting to the Average column. This made strong and weak performers easy to identify visually.
@@ -144,17 +151,14 @@ I sorted the table by Highest Score in descending order and applied conditional 
 I added three extra columns: Support Required, Subject in Need of Support and Number of Subjects Passed.
 
 **Support Required**:<br>`=IF(E2<70,"Yes","No")`
-
 This flags students whose average fell below the pass threshold.
 
 **Subject in Need of Support**:<br>`=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`
-
 This identifies each student's weakest subject.
 
 **Number of Subjects Passed**:<br>`=COUNTIF(B2:D2,">=70")`
-
 This counts how many subjects each student scored 70 or above in.
-
+<br>
 These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
 `=COUNTIF(B2:D2,">=70")`<br>
 This counts how many subjects each student scored 70 or above in.
