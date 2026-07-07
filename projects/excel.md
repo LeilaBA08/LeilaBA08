@@ -1,6 +1,7 @@
 # Excel Projects
 
-A collection of Excel projects completed during my Data Analyst bootcamp, covering data cleaning, formulas, pivot tables, and visualisations.
+A collection of Excel projects completed during my Data Analyst bootcamp, covering data cleaning, formulas, pivot tables, and visualisations.<br>
+All datasets provided in the bootcamp are sourced from Kaggle. 
 
 ## Contents
 - [1. Retail Sales Analysis](#1-retail-sales-analysis)
@@ -12,23 +13,11 @@ A collection of Excel projects completed during my Data Analyst bootcamp, coveri
 
 ## 1. Retail Sales Analysis
 
-Brief intro: what the dataset was and what the goal of the task was.
+For this task, I was given a retail sales dataset. I turned the raw data into a structured Excel table, then used formulas and pivot tables to calculate commission and summarise sales by customer and product category. 
 
-**What I did:**
-- Screenshot 1 – [caption/explanation]
-- Screenshot 2 – [caption/explanation]
-- Screenshot 3 – [caption/explanation]
-- Screenshot 4 – [caption/explanation]
-- Screenshot 5 – [caption/explanation]
-- Screenshot 6 – [caption/explanation]
+### Building the table
 
-**Formulas/functions used:**
-- `FORMULA()` – why I used it, what it solved
 
-**What I learned / result:**
-- ...
-
----
 
 ## 2. Bike Sales & SWITCH Dataset
 
