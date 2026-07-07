@@ -26,7 +26,7 @@ I converted the raw data into an Excel Table using Ctrl+T. The columns included 
 *Total Sales column added*
 
 **Total Sales**:<br>
-`=G2*H2`
+`=G2*H2`<br>
 This formula multiplies quantity by unit price to calculate the total value of each sale.
 
 ![Customer Category formula](../images/retail_sales_customerformula.png)
@@ -34,7 +34,7 @@ This formula multiplies quantity by unit price to calculate the total value of e
 *Customer Category column added*
 
 **Customer Category**:<br> 
-`=IFS(E2>=50,"Senior",E2>=30,"Adult",E2<30,"Young Adult")`
+`=IFS(E2>=50,"Senior",E2>=30,"Adult",E2<30,"Young Adult")`<br>
 This formula groups customers into age bands, making it easier to compare sales patterns across different age groups.
 
 ### Commission calculations
@@ -44,15 +44,15 @@ This formula groups customers into age bands, making it easier to compare sales 
 I filtered the data to customers aged 64 and added a commission amount column, along with a summary box for commission rate, total commission and average commission.
 
 **Commission Amount Column**:<br>`
-=I3*$P$8`
+=I3*$P$8`<br>
 This calculates commission by multiplying total sales by a fixed 1.5% rate. The `$` locks the reference so it stays fixed when copied down each row, rather than shifting to a different cell each time.
 
 **Commission Total**:<br>`
-=SUM(range)` 
+=SUM(range)` <br>
 This shows the total commission earned across the filtered sales.
 
-**Average Commission**:<br> `
-=AVERAGE(range)` 
+**Average Commission**:<br> 
+`=AVERAGE(range)` <br>
 This shows the average commission per sale and helps compare performance across different sales volumes.
 
 The total gives an overview of commission costs for budgeting, while the average shows what a typical sale earns. This is useful for spotting whether costs are changing due to sales volume or sales value.
@@ -95,7 +95,7 @@ I created a pivot table and stacked column chart showing the sum of order quanti
 ![SWITCH formula categorising sales volume](../images/switch_task.png)
 
 I added a Sales Volume By Text column using:<br>
-`=SWITCH(TRUE, C2>600,"High", C2>=300,"Medium","Low")`
+`=SWITCH(TRUE, C2>600,"High", C2>=300,"Medium","Low")`<br>
 This groups sales volume into High, Medium or Low bands without needing nested IF statements. Using SWITCH(TRUE, ...) makes the formula cleaner and easier to read.
 
 ---
@@ -150,16 +150,15 @@ I sorted the table by Highest Score in descending order and applied conditional 
 
 I added three extra columns: Support Required, Subject in Need of Support and Number of Subjects Passed.
 
-**Support Required**:<br>`=IF(E2<70,"Yes","No")`
+**Support Required**:<br>
+`=IF(E2<70,"Yes","No")`<br>
 This flags students whose average fell below the pass threshold.
 
-**Subject in Need of Support**:<br>`=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`
+**Subject in Need of Support**:<br>
+`=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`<br>
 This identifies each student's weakest subject.
 
-**Number of Subjects Passed**:<br>`=COUNTIF(B2:D2,">=70")`
-This counts how many subjects each student scored 70 or above in.
-<br>
-These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
+**Number of Subjects Passed**:<br>
 `=COUNTIF(B2:D2,">=70")`<br>
 This counts how many subjects each student scored 70 or above in.
 <br>
