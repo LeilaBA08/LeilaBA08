@@ -115,7 +115,7 @@ answer real-world style questions.
 tables, connected via `CountryCode`/`Code` fields.*
 <br>
 
-📄 [View the full list of queries](../projects/sql_queries.txt)
+📄 [View the full list of queries](SQL_queries.txt)
 
 ### Filtering and sorting
 
