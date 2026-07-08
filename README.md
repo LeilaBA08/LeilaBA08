@@ -41,13 +41,12 @@ Four projects covering data cleaning, formulas, pivot tables, and charts using r
 
 ## 🌱 Continuing to Grow
 
-I'm continuously building on the skills covered in this bootcamp, working on personal 
-projects alongside my coursework to keep learning beyond what's required. I'm 
-currently building a personal Python tool to search and organise my own writing 
-files, with plans to add a natural language interface using a local AI model.
+## 🌱 Continuing to Grow
 
-As I progress, I'll be adding more advanced projects, deeper analysis, and new tools 
-to this portfolio.
+I'm continuously building on the skills covered in this bootcamp, working on personal 
+projects alongside my coursework to keep learning beyond what's required. As I 
+progress, I'll be adding more advanced projects, deeper analysis, and new tools to 
+this portfolio.
 
 <br>
 
