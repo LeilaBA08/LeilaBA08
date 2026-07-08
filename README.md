@@ -4,7 +4,6 @@ Welcome to my Data Analyst portfolio! This repository showcases the projects I'v
 built throughout my Data Analyst bootcamp, from cleaning and analysing data in Excel, 
 to writing SQL queries, building interactive dashboards, and exploring datasets with 
 Python.
-
 <br>
 ## 🚀 What I've Learnt
 
@@ -16,6 +15,7 @@ Python.
 <br> Querying and managing databases using MySQL Workbench
 - **📈 Tableau / Power BI** 
 <br> Building interactive dashboards and reports
+
 <br>
 
 ## 📁 Projects I've Completed
@@ -30,6 +30,7 @@ Four projects covering data cleaning, formulas, pivot tables, and charts using r
 <br> Designing a retail database from scratch, and querying a world dataset with filters, joins, and aggregations
 - **[🐍 Python](projects/python.md)** 
 <br> Analysing and visualising student data using Pandas, Matplotlib, and Seaborn
+
 <br>
 
 ## 🌱 Continuing to Grow
@@ -43,6 +44,7 @@ As I progress, I'll be adding more advanced projects, deeper analysis, and new t
 to this portfolio.
 
 <br>
+
 ## 📫 Get in Touch
 
 - LinkedIn: [Leila Belhsen Alcaide](https://www.linkedin.com/in/leila-belhsen-alcaide-78913b405/)
