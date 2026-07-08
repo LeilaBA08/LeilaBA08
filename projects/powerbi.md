@@ -48,37 +48,37 @@ Bringing all of this together into one dashboard means a business doesn't have t
 ## 2. Data Preparation in Power BI
 
 I worked through two connected labs covering how to get, clean, and load data into 
-Power BI, importing from multiple sources, fixing data quality issues, and shaping tables ready for reporting.
+Power BI, importing from multiple sources, fixing data quality issues, and shaping tables ready for reporting.<br>
 <br>
 ![Data profiling showing misspelled Warehouse value](../images/lab1_1.png)
 
 I used Power Query's column profiling tools to check data quality across the imported 
 tables. This surfaced a data entry issue; some rows had "Ware House" instead of 
-"Warehouse", which needed fixing before the data could be trusted for analysis.
+"Warehouse", which needed fixing before the data could be trusted for analysis.<br>
 <br>
 ![Final set of queries loaded, including CSV import](../images/lab1_4.png)
 
 I imported an additional CSV file (Reseller Sales Targets) alongside the data already 
 pulled from other sources, bringing the total to 8 queries ready to be shaped and 
-loaded into the data model.
+loaded into the data model.<br>
 <br>
 ![Merging and renaming columns to build a Salesperson table](../images/lab2_1.png)
 
 I merged columns (combining first and last name into a single "Salesperson" field) 
 and renamed others for clarity, for example, `EmployeeNationalIDAlternateKey` to 
-`EmployeeID`, and `EmailAddress` to `UPN` (User Principal Name).
+`EmployeeID`, and `EmailAddress` to `UPN` (User Principal Name).<br>
 <br>
 ![Replace Values fixing the Warehouse spelling issue](../images/lab2_2.png)
 
 I used Replace Values to fix the "Ware House" data quality issue spotted earlier, 
 correcting it to "Warehouse" across the dataset, then renamed several columns 
-(Business Type, Reseller, State-Province, Country-Region) for consistency.
+(Business Type, Reseller, State-Province, Country-Region) for consistency.<br>
 <br>
 ![Merging queries and expanding ColorFormats columns](../images/lab2_3.png)
 
 I merged the Product query with a ColorFormats lookup table, then expanded the 
 Background Colour Format and Font Colour Format columns into the main table, adding 
-extra formatting detail without manually re-entering it.
+extra formatting detail without manually re-entering it.<br>
 <br>
 ![Final data model loaded into Power BI Desktop](../images/lab2_4.png)
 
@@ -90,18 +90,18 @@ Desktop, ready to build visuals and reports from.
 ## 3. Designing a Power BI Report
 
 I built a multi-page report with slicers, filters, and a combination chart to explore 
-sales performance across years, regions, and product categories.
+sales performance across years, regions, and product categories.<br>
 <br>
 ![Year and Region slicers added to the report](../images/lab3_1.png)
 
-I added a Year slicer and a Region slicer (using the Region hierarchy field) to let anyone viewing the report filter the whole page by year or region interactively.
+I added a Year slicer and a Region slicer (using the Region hierarchy field) to let anyone viewing the report filter the whole page by year or region interactively.<br>
 <br>
 ![Combo chart showing sales and profit margin by month](../images/lab3_2.png)
 
 I built a combination chart, columns for Sum of Sales, with a line overlay for 
 Profit Margin, broken down by month, alongside supporting charts for Sales by 
 Country and Category, and Quantity by Category. I turned on data labels so exact 
-values are visible without hovering.
+values are visible without hovering.<br>
 <br>
 ![Filters pane showing Category, Subcategory, Product, and Colour filters](../images/lab3_3.png)
 
@@ -112,22 +112,22 @@ I added page-level filters for Category, Subcategory, Product, and Colour, givin
 ## 4. Visual Calculations in Power BI
 
 I used Power BI's visual calculations feature to add running totals, moving 
-averages, and period-over-period comparisons directly onto a chart.
+averages, and period-over-period comparisons directly onto a chart.<br>
 <br>
 ![Base bar chart of sales and cost by year](../images/lab4_1.png)
 
 I started with a simple bar chart comparing Sum of Sales and Sum of Cost by year, 
-sorted ascending, as the base for the calculations that follow.
+sorted ascending, as the base for the calculations that follow.<br>
 <br>
 ![Running sum and moving average added as tooltip calculations](../images/lab4_2.png)
 
 I added Profit, Profit versus previous period, Running sum, and Moving average as 
 visual calculations, setting the latter two to display as tooltips, so the chart 
-stays clean while still showing the extra detail on hover.
+stays clean while still showing the extra detail on hover.<br>
 <br>
 ![Running sum chart resetting at the start of each fiscal year](../images/lab4_4.png)
 
 I updated the Running sum calculation using the `HIGHESTPARENT` reset parameter, so the running total restarts at the beginning of each new fiscal year rather than 
 accumulating indefinitely, which is useful for year-on-year comparisons rather than an 
-all-time total.
+all-time total.<br>
 <br>
