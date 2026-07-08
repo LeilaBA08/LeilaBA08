@@ -175,6 +175,7 @@ These extra columns turn raw scores into something more useful by helping a teac
 ## Skills Demonstrated
 
 - Structuring raw data using Excel Tables
+- Cleaning and standardising inconsistent text data
 - Formulas: `IFS`, `SWITCH`, `MAX`, `AVERAGE`, `SUM`, `COUNTIF`, `IF`
 - Absolute vs relative cell references
 - Filtering and sorting for targeted analysis
