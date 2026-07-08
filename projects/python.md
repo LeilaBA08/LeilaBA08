@@ -5,6 +5,7 @@ Pandas in Google Colab.
 
 ## Contents
 - [1. Student Data Analysis with Pandas](#1-student-data-analysis-with-pandas)
+- [2. Student Data Visualisations](#2-studen-data-visualisations)
 
 ---
 
@@ -14,6 +15,8 @@ A group exercise using the `student.csv` dataset, covering the core Pandas workf
 from loading data through to exporting results, indexing, filtering, aggregation, 
 pivot tables, and visualisation.
 
+📄 [View the full notebook](python_coding.ipynb)
+<br>
 ### Loading and exploring the data
 
 ```python
@@ -179,6 +182,88 @@ A bar chart showing the average score for each class, making it easy to see at a
 
 ---
 
+## 2. Student Data Visualisations
+
+Using the same `student.csv` dataset, I created a series of charts with Matplotlib and 
+Seaborn to visualise mark distributions, class sizes, and performance by gender.
+
+📄 [View the full notebook](Day4Task2.ipynb)
+<br>
+![Distribution of marks histogram](../images/mark_histogram.png)
+
+```python
+plt.hist(df['mark'], bins=10, edgecolor='black', color='green')
+plt.title('Distribution of Marks')
+plt.xlabel('Marks')
+plt.ylabel('Frequency')
+plt.show()
+```
+
+A histogram showing how student marks are distributed across the class, making it 
+easy to see where most students' scores cluster.<br>
+<br>
+
+![Marks by gender scatter plot](../images/marks_by_gender_scatter.png)
+
+```python
+df['gender'] = df['gender'].astype(str)
+plt.scatter(df['gender'], df['mark'], alpha=0.7, color='green')
+plt.title('Marks by Gender')
+plt.xlabel('Gender')
+plt.ylabel('Marks')
+plt.show()
+```
+
+A scatter plot comparing individual marks by gender, showing the spread of scores 
+within each group rather than just an average. <br>
+<br>
+
+![Marks distribution by class boxplot](../images/boxplot_by_class.png)
+
+```python
+sns.boxplot(x='class', y='mark', data=df, color='green')
+plt.title('Marks Distribution by Class')
+plt.xlabel('Class')
+plt.ylabel('Marks')
+plt.show()
+```
+
+A box plot comparing the spread of marks across classes, showing the median, 
+quartiles, and any outliers for each class. <br>
+<br>
+
+![Number of students per class countplot](../images/countplot_by_class.png)
+
+```python
+sns.countplot(x='class', data=df, color='green')
+plt.title('Number of Students in Each Class')
+plt.xlabel('Class')
+plt.ylabel('Number of Students')
+plt.show()
+```
+
+A count plot showing how many students are in each class, useful context for 
+interpreting the other charts (for example, a class with very few students may show more 
+extreme averages). <br>
+<br>
+
+![Average marks by gender bar chart](../images/avg_marks_by_gender.png)
+
+```python
+avg_marks_gender = df.groupby('gender')['mark'].mean().reset_index()
+sns.barplot(x='gender', y='mark', data=avg_marks_gender, color='green')
+plt.title('Average Marks by Gender')
+plt.xlabel('Gender')
+plt.ylabel('Average Marks')
+plt.show()
+```
+
+A bar chart comparing the average mark by gender giving a clear, simplified summary 
+after seeing the fuller spread in the scatter plot above. <br>
+<br>
+
+---
+
 ## Skills Demonstrated
 
 - Loading and exploring data with `read_csv`, `head`, `info`, and `describe`
@@ -189,4 +274,5 @@ A bar chart showing the average score for each class, making it easy to see at a
 - Writing custom functions and applying them with `apply`
 - Sorting data
 - Exporting DataFrames to CSV
-- Basic data visualisation with Pandas plotting
+- Data visualisation with Matplotlib and Seaborn (histograms, scatter plots, box 
+plots, count plots, bar charts)
