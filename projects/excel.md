@@ -167,3 +167,17 @@ This identifies each student's weakest subject.
 This counts how many subjects each student scored 70 or above in.
 <br>
 These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
+
+---
+
+## Skills Demonstrated
+
+- Structuring raw data using Excel Tables
+- Formulas: `IFS`, `SWITCH`, `MAX`, `AVERAGE`, `SUM`, `COUNTIF`, `IF`
+- Absolute vs relative cell references
+- Filtering and sorting for targeted analysis
+- Conditional formatting to visually highlight data
+- Building and interpreting pivot tables
+- Adding slicers for interactive filtering
+- Creating line, column, and pie charts
+- Presenting data as percentages vs raw totals depending on context
