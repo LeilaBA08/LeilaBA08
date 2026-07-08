@@ -131,7 +131,7 @@ For this task, I analysed a small classroom dataset. I calculated averages and t
 ![Average formula](../images/average.png)
 
 I added an Average column using:<br>
-`=AVERAGE(B2:D2)`
+`=AVERAGE(B2:D2)`<br>
 This calculates each student's average across English, Mathematics and Science.
 <br>
 <br>
@@ -139,7 +139,7 @@ This calculates each student's average across English, Mathematics and Science.
 ![Highest score formula](../images/student_highestscore.png)
 
 I also added a Highest Score column using:<br>
-`=MAX(B3,C3,D3)`
+`=MAX(B3,C3,D3)`<br>
 This identifies each student's strongest subject at a glance.
 <br>
 <br>
@@ -167,8 +167,10 @@ This identifies each student's weakest subject.
 This counts how many subjects each student scored 70 or above in.
 <br>
 These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
-
+<br>
+<br>
 ---
+<br>
 
 ## Skills Demonstrated
 
@@ -181,3 +183,6 @@ These extra columns turn raw scores into something more useful by helping a teac
 - Adding slicers for interactive filtering
 - Creating line, column, and pie charts
 - Presenting data as percentages vs raw totals depending on context
+<br>
+<br>
+<br>
