@@ -1,5 +1,11 @@
 # 👋 Hi, I'm Leila
 
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+
 Welcome to my Data Analyst portfolio! This repository showcases the projects I've 
 built throughout my Data Analyst bootcamp, from cleaning and analysing data in Excel, 
 to writing SQL queries, building interactive dashboards, and exploring datasets with 
