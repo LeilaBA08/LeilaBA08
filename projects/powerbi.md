@@ -4,9 +4,9 @@ A collection of Power BI labs completed during my Data Analyst bootcamp.
 
 ## Contents
 - [1. Retail Sales Dashboard](#1-retail-sales-dashboard)
-- [2.Data Preparation in Power BI](#2-data-preparation-in-power-bi)
-- [3.Designing a Power BI Report](#3-designing-power-bi-report)
-- [4.Visual Calculations in Power BI](#4-visual-calculations-in-power-bi)
+- [2.Data Preparation in Power BI Lab](#2-data-preparation-in-power-bi-lab)
+- [3.Designing a Power BI Report Lab](#3-designing-power-bi-report-lab)
+- [4.Visual Calculations in Power BI Lab](#4-visual-calculations-in-power-bi-lab)
 ---
 
 ## 1. Retail Sales Dashboard
@@ -45,7 +45,7 @@ A decomposition tree letting you drill down from total sales through Region → 
 ### Why this is useful:
 Bringing all of this together into one dashboard means a business doesn't have to dig through raw spreadsheet rows to understand performance. At a glance, they can see which customer segment and product category drive the most sales, then use the decomposition tree to drill into exactly which region, country, or city is performing well or underperforming, which is much quicker than filtering a spreadsheet manually. The interactivity (filters, drill-down) also means the same dashboard can answer many different questions without needing to rebuild it each time.
 
-## 2. Data Preparation in Power BI
+## 2. Data Preparation in Power BI Lab
 
 I worked through two connected labs covering how to get, clean, and load data into 
 Power BI, importing from multiple sources, fixing data quality issues, and shaping tables ready for reporting.<br>
@@ -98,7 +98,7 @@ Desktop, ready to build visuals and reports from.
 
 ---
 
-## 3. Designing a Power BI Report
+## 3. Designing a Power BI Report Lab
 
 I built a multi-page report with slicers, filters, and a combination chart to explore 
 sales performance across years, regions, and product categories.<br>
@@ -125,7 +125,7 @@ I added page-level filters for Category, Subcategory, Product, and Colour, givin
 
 ---
 
-## 4. Visual Calculations in Power BI
+## 4. Visual Calculations in Power BI Lab
 
 I used Power BI's visual calculations feature to add running totals, moving 
 averages, and period-over-period comparisons directly onto a chart.<br>
