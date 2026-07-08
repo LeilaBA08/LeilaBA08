@@ -5,7 +5,7 @@ Pandas in Google Colab.
 
 ## Contents
 - [1. Student Data Analysis with Pandas](#1-student-data-analysis-with-pandas)
-- [2. Student Data Visualisations](#2-studen-data-visualisations)
+- [2. Student Data Visualisations](#2-student-data-visualisations)
 
 ---
 
