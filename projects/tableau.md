@@ -86,3 +86,18 @@ The dashboard shows that pop is the most popular genre overall, and some artists
 ### Reflection:
 This kind of analysis could help a music platform or label understand which genres and track characteristics tend to perform best, informing decisions around playlist curation, artist promotion, or which new tracks might have wider appeal.
 
+---
+
+## Skills Demonstrated
+
+- Building bar, line, pie, and scatter plot charts
+- Using filters (Top N, category, year) to focus analysis
+- Colour-coding by category, continent, and genre for clearer comparisons
+- Adding trend lines to scatter plots
+- Creating calculated fields (e.g. converting milliseconds to minutes)
+- Formatting axes, legends, and titles for clarity
+- Building and publishing interactive dashboards to Tableau Public
+- Drawing conclusions and business insights from visualised data
+
+<br>
+<br>
