@@ -21,25 +21,29 @@ import pandas as pd
 df = pd.read_csv('student.csv')
 ```
 
-I made sure Pandas was imported first, then loaded the student CSV into a DataFrame.
+I made sure Pandas was imported first, then loaded the student CSV into a DataFrame. <br>
+<br>
 
 ```python
 df.head()
 ```
 
-This shows the first 5 rows of the DataFrame, including the column names.
+This shows the first 5 rows of the DataFrame, including the column names. <br>
+<br>
 
 ```python
 df.info()
 ```
 
-This shows information about the DataFrame, including the index, data types, and columns.
+This shows information about the DataFrame, including the index, data types, and columns. <br>
+<br>
 
 ```python
 df.describe()
 ```
 
-This shows summary statistics for the numeric columns, in this case, `id` and `mark`.
+This shows summary statistics for the numeric columns, in this case, `id` and `mark`. <br>
+<br>
 
 ### Indexing and slicing
 
@@ -47,26 +51,29 @@ This shows summary statistics for the numeric columns, in this case, `id` and `m
 df['name']
 ```
 
-Selects a single column from the DataFrame.
+Selects a single column from the DataFrame. <br>
+<br>
 
 ```python
 df[['name', 'mark']]
 ```
 
-To select more than one column, the column names go inside double square brackets.
+To select more than one column, the column names go inside double square brackets. <br>
+<br>
 
 ```python
 df.iloc[0:3]
 ```
 
-Used `iloc` to select rows by their index position, since indexing starts at 0, this 
-selects the first 3 rows.
+Used `iloc` to select rows by their index position, since indexing starts at 0, this selects the first 3 rows. <br>
+<br>
 
 ```python
 df[df['class'] == 'Four']
 ```
 
-Filters the DataFrame to only show rows where `class` is equal to "Four".
+Filters the DataFrame to only show rows where `class` is equal to "Four". <br>
+<br>
 
 ### Data manipulation
 
@@ -74,7 +81,8 @@ Filters the DataFrame to only show rows where `class` is equal to "Four".
 df['passed'] = df['mark'] >= 60
 ```
 
-Adds a new column, `passed`, which shows `True` or `False` depending on whether each student's mark is 60 or above.
+Adds a new column, `passed`, which shows `True` or `False` depending on whether each student's mark is 60 or above. <br>
+<br>
 
 ```python
 df.rename(columns={'mark': 'score'}, inplace=True)
@@ -82,14 +90,16 @@ df.head()
 ```
 
 Renamed the `mark` column to `score`, then checked `df.head()` to confirm the change 
-took effect.
+took effect. <br>
+<br>
 
 ```python
 df.drop('passed', axis=1, inplace=True)
 ```
 
 Dropped the `passed` column. `axis=1` tells Pandas to remove a column rather than a row, and `inplace=True` makes the change to the original DataFrame rather than just 
-returning a preview.
+returning a preview. <br>
+<br>
 
 ### Aggregation and grouping
 
@@ -97,19 +107,22 @@ returning a preview.
 df.groupby('class')['score'].mean()
 ```
 
-Groups the DataFrame by `class`, then calculates the mean `score` for each group.
+Groups the DataFrame by `class`, then calculates the mean `score` for each group. <br>
+<br>
 
 ```python
 df.groupby('class').size()
 ```
 
-Groups by `class` again, but this time counts how many students are in each one.
+Groups by `class` again, but this time counts how many students are in each one. <br>
+<br>
 
 ```python
 df.groupby('gender')['score'].mean()
 ```
 
-Groups by `gender` and finds the average score for each group.
+Groups by `gender` and finds the average score for each group. <br>
+<br>
 
 ### Advanced operations
 
@@ -118,7 +131,8 @@ pd.pivot_table(df, index='class', columns='gender', values='score')
 ```
 
 Builds a pivot table where each row is a class, each column is a gender, and each cell 
-shows the average score for that group.
+shows the average score for that group. <br>
+<br>
 
 ```python
 def get_grade(score):
@@ -134,13 +148,15 @@ def get_grade(score):
 df['grade'] = df['score'].apply(get_grade)
 ```
 
-Created a new `grade` column by applying a function that assigns a letter grade based on the score.
+Created a new `grade` column by applying a function that assigns a letter grade based on the score. <br>
+<br>
 
 ```python
 df.sort_values(by='score', ascending=False)
 ```
 
-Sorts the DataFrame by `score`, with the highest scores at the top.
+Sorts the DataFrame by `score`, with the highest scores at the top. <br>
+<br>
 
 ### Exporting data
 
@@ -148,7 +164,8 @@ Sorts the DataFrame by `score`, with the highest scores at the top.
 df.to_csv('students_with_grades.csv', index=False)
 ```
 
-Saved the updated DataFrame to a new CSV file, excluding the row index.
+Saved the updated DataFrame to a new CSV file, excluding the row index. <br>
+<br>
 
 ### Visualisation
 
@@ -157,7 +174,8 @@ df.groupby('class')['score'].mean().plot(kind='bar')
 plt.show()
 ```
 
-A bar chart showing the average score for each class, making it easy to see at a glance which class scored higher or lower.
+A bar chart showing the average score for each class, making it easy to see at a glance which class scored higher or lower. <br>
+<br>
 
 ---
 
