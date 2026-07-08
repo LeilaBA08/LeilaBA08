@@ -4,6 +4,7 @@ A collection of SQL projects completed during my Data Analyst bootcamp, using My
 
 ## Contents
 - [1. Retail Database Design](#1-retail-database-design)
+- [2. World Database Queries](#2-world-database-queries)
 
 ---
 
