@@ -13,7 +13,7 @@ For this project, I explored Power Query in Excel to clean and shape a retail sa
 
 🔗 [View live dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDllZjE0YjItOWY0OC00ZmJlLWEyY2ItMmQ1ODk5ZjUwNmVmIiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9)
 
-![Retail Sales dashboard](../images/powerbi_retail_sales.png)
+![Retail Sales dashboard](../images/retail_powerbi_dash.png)
 
 *Note: the decomposition tree (bottom right) doesn't render in the shared/embedded 
 version due to a known Power BI limitation with AI-powered visuals. It's fully 
