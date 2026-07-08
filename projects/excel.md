@@ -162,12 +162,12 @@ This flags students whose average fell below the pass threshold.
 `=IFS(B2=MIN($B2:$D2),"English",C2=MIN($B2:$D2),"Mathematics",D2=MIN($B2:$D2),"Science")`<br>
 This identifies each student's weakest subject.
 
-**Number of Subjects Passed**:<br>
-`=COUNTIF(B2:D2,">=70")`<br>
+**Number of Subjects Passed**: <br>
+`=COUNTIF(B2:D2,">=70")` <br>
 This counts how many subjects each student scored 70 or above in.
 <br>
 These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
-<br>
+
 <br>
 ---
 <br>
