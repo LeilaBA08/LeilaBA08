@@ -169,8 +169,8 @@ This counts how many subjects each student scored 70 or above in.
 These extra columns turn raw scores into something more useful by helping a teacher quickly see who needs support and in which subject.
 
 <br>
+
 ---
-<br>
 
 ## Skills Demonstrated
 
