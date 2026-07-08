@@ -153,5 +153,19 @@ stays clean while still showing the extra detail on hover.<br>
 I updated the Running sum calculation using the `HIGHESTPARENT` reset parameter, so the running total restarts at the beginning of each new fiscal year rather than 
 accumulating indefinitely, which is useful for year-on-year comparisons rather than an 
 all-time total.<br>
-<br><br>
+<br>
+
+---
+
+## Skills Demonstrated
+
+- Importing and merging data from multiple sources (CSV, database tables)
+- Cleaning and transforming data using Power Query (Replace Values, renaming, merging columns)
+- Building relationships between tables in the data model
+- Creating pie, bar, and combination charts
+- Using slicers and filters (page-level and visual-level) for interactive reports
+- Building KPI cards and decomposition trees
+- Creating visual calculations (running sum, moving average, period-over-period comparisons)
+- Publishing and sharing interactive dashboards
+
 <br>
