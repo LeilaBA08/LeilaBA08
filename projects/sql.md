@@ -201,10 +201,15 @@ Rather than hardcoding the average population as a number, I used a subquery so 
 
 ## Skills Demonstrated
 
+- Designing a relational database schema (fact/dimension tables, primary and foreign keys)
+- Writing `CREATE TABLE` statements to define tables and their columns
+- Inserting data using `INSERT INTO`
 - Filtering with `WHERE`, `LIKE`, `BETWEEN`, and `IN`
 - Sorting and limiting results with `ORDER BY` and `LIMIT`
 - Aggregate functions: `COUNT`, `AVG`, `MAX`
 - Grouping data with `GROUP BY`
 - Joining tables with `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`
 - Writing subqueries instead of hardcoding values
-- Creating tables and inserting data with `CREATE TABLE` and `INSERT INTO`
+- Planning for database maintenance, security, and backups
+
+<br>
