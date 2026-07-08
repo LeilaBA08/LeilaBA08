@@ -99,3 +99,112 @@ secure cloud storage.
 If the shop wanted to expand its loyalty scheme, a separate Loyalty Rewards table 
 could be added to track vouchers, reward levels, and special offers linked to each 
 membership number, keeping the core schema simple while still allowing room to grow.
+
+---
+
+## 2. World Database Queries
+
+A set of SQL queries written against a sample `world` database (containing city, 
+country, and language data), covering filtering, sorting, aggregation, and joins to 
+answer real-world style questions.
+<br>
+
+![Entity Relationship Diagram for the world database](../images/world_db_erd.png)
+
+*ERD showing the relationships between the `country`, `city`, and `countrylanguage` 
+tables, connected via `CountryCode`/`Code` fields.*
+<br>
+
+📄 [View the full list of queries](sql_queries.txt)
+
+### Filtering and sorting
+
+```sql
+-- Country with the highest life expectancy
+SELECT 
+    Name AS 'Country Name', 
+    LifeExpectancy
+FROM
+    country
+ORDER BY 
+    LifeExpectancy DESC
+LIMIT 1;
+```
+
+Used `ORDER BY` combined with `LIMIT 1` to pull out a single top result, rather than 
+sorting the whole table and scanning manually.
+
+```sql
+-- Cities with population between 500,000 and 1,000,000
+SELECT * FROM city WHERE Population BETWEEN 500000 AND 1000000;
+```
+
+`BETWEEN` made it possible to filter a numeric range in one clean condition, instead of 
+combining two separate `>` and `<` statements.
+
+```sql
+-- Cities containing the word "New"
+SELECT * 
+FROM city
+WHERE Name LIKE '%New%';
+```
+
+Used `LIKE` with `%` wildcards to match partial text, `%New%` finds "New" anywhere in 
+the name, not just at the start or end.
+
+### Aggregation
+
+```sql
+-- Number of cities sharing the same name, sorted alphabetically
+SELECT
+    Name, 
+    COUNT(1)
+FROM
+    city
+GROUP BY Name
+ORDER BY Name ASC;
+```
+
+`GROUP BY` combined with `COUNT(1)` shows how many times each city name repeats across the dataset, useful for spotting common names.
+
+```sql
+-- Most populated city
+SELECT * FROM city ORDER BY Population DESC LIMIT 1;
+```
+
+### Joins
+
+```sql
+-- All cities in Spain
+SELECT * 
+FROM country
+INNER JOIN city ON city.CountryCode = country.Code
+WHERE country.Name = "Spain";
+```
+
+Used an `INNER JOIN` to combine the `country` and `city` tables through their shared 
+`CountryCode`/`Code` fields, since population and city data live in separate tables 
+but often need to be viewed together.
+
+### Subqueries
+
+```sql
+-- Cities with an above-average population
+SELECT * 
+FROM city
+WHERE Population > (SELECT AVG(Population) FROM city);
+```
+
+Rather than hardcoding the average population as a number, I used a subquery so the comparison stays accurate even if the underlying data changes.
+
+---
+
+## Skills Demonstrated
+
+- Filtering with `WHERE`, `LIKE`, `BETWEEN`, and `IN`
+- Sorting and limiting results with `ORDER BY` and `LIMIT`
+- Aggregate functions: `COUNT`, `AVG`, `MAX`
+- Grouping data with `GROUP BY`
+- Joining tables with `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`
+- Writing subqueries instead of hardcoding values
+- Creating tables and inserting data with `CREATE TABLE` and `INSERT INTO`
