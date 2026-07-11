@@ -185,7 +185,8 @@ A bar chart showing the average score for each class, making it easy to see at a
 ## 2. Student Data Visualisations
 
 Using the same `student.csv` dataset, I created a series of charts with Matplotlib and 
-Seaborn to visualise mark distributions, class sizes, and performance by gender.
+Seaborn to visualise mark distributions, class sizes, and performance by gender.<br>
+*Note: this section uses a separate notebook, so the original column name (mark) is used here rather than the renamed score column from Section 1.*
 
 📄 [View the full notebook](Day4Task2.ipynb)
 <br>
