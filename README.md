@@ -6,13 +6,13 @@
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
-Welcome to my Data Analyst portfolio. This repository showcases the projects I’ve built throughout my bootcamp and personal learning journey, from cleaning and analysing data in Excel to writing SQL queries, building dashboards, and exploring datasets with Python.
+Welcome to my Data Analyst portfolio, showcasing projects across Excel, SQL, Python, Tableau, and Power BI.
 
 ---
 
 ## 🌟 About Me
 
-I’m Leila, an aspiring Data Analyst who enjoys creative projects like worldbuilding and writing, and I also love murder-mystery logic puzzles such as Murdle. I’m transitioning into tech after discovering how much I enjoy working with data, and this portfolio showcases the projects I’ve built throughout my bootcamp and personal learning.
+I'm Leila, a Data Technician Bootcamp graduate transitioning into a career in data analysis. Outside of data, I enjoy creative projects like worldbuilding and writing, and I love a good logic puzzle. Murdle is a current favourite.
 
 ---
 
