@@ -4,9 +4,9 @@ A collection of Power BI labs completed during my Data Analyst bootcamp.
 
 ## Contents
 - [1. Retail Sales Dashboard](#1-retail-sales-dashboard)
-- [2.Data Preparation in Power BI Lab](#2-data-preparation-in-power-bi-lab)
-- [3.Designing a Power BI Report Lab](#3-designing-a-power-bi-report-lab)
-- [4.Visual Calculations in Power BI Lab](#4-visual-calculations-in-power-bi-lab)
+- [2. Data Preparation in Power BI Lab](#2-data-preparation-in-power-bi-lab)
+- [3. Designing a Power BI Report Lab](#3-designing-a-power-bi-report-lab)
+- [4. Visual Calculations in Power BI Lab](#4-visual-calculations-in-power-bi-lab)
 
 
 ---
