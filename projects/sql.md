@@ -66,6 +66,8 @@ CREATE TABLE Sales (
     Quantity INT,
     CustomerID INT,
     SupplierID INT
+    SKU INT,
+    FOREIGN KEY (SKU) REFERENCES Products(SKU)
 );
 ```
 
